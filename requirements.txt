@@ -1,0 +1,3 @@
+django
+logto
+python-dotenv
