@@ -127,3 +127,13 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+# Add Logto Configuration
+LOGTO = {
+    'app_id': os.getenv('LOGTO_APP_ID'),
+    'app_secret': os.getenv('LOGTO_APP_SECRET'),
+    'app_endpoint': os.getenv('LOGTO_APP_ENDPOINT'),
+    'redirect_uri': os.getenv('LOGTO_APP_REDIRECT_URI'),
+    'logout_uri': os.getenv('LOGTO_APP_POST_SIGNOUT_URI'),
+}

@@ -1,3 +1,4 @@
 django
 logto
 python-dotenv
+uvicorn
